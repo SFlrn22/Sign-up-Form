@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./index.css">
+        <script src="./index.js" defer></script>
         <title>Sign-up Form</title>
     </head>
     <body>
@@ -24,7 +25,7 @@
                     <p>This is not a real service, but this sign up page is made for a company whose services provide you with the most relaxing vacation at a very low cost</p>
                     <h3>Do yourself a favor</h3>
                 </div>
-                <form action="" method="post">
+                <form action="#" id="form">
                     <div class="form-div">
                         <h3>Let's relax!</h3>
                         <fieldset>
@@ -58,7 +59,8 @@
                             </div>
                         </fieldset>
                     </div>
-                    <button type="submit">Create account</button>
+                    <button id="submit" type="submit">Create account</button>
+                    <span id="error" class="error"></span>
                 </form>
                 <h3 class="has-account">Already have an account? Log in</h3>
             </div>

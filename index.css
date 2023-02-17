@@ -105,7 +105,6 @@ a {
 form {
     display: flex;
     flex-direction: column;
-    
 }
 
 fieldset {
@@ -143,6 +142,28 @@ input:invalid {
     background-color: rgba(213, 101, 93, 1);
 }
 
+button {
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: rgb(153, 85, 153);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(105, 32, 105);
+}
+
+button:active{
+    background-color: rgb(177, 111, 177);
+}
+
+.has-account{
+    color: rgb(69, 54, 89);
+    margin-top: 30px;
+}
 
 @media screen and (max-width: 1200px) { 
     .logo {

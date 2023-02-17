@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Helvetica, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@font-face {
+    font-family: Courgette-Regular;
+    src: url(./fonts/Courgette-Regular.ttf);
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.left-side {
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    background: rgb(122, 68, 122, 0.4);
+    width: 500px;
+    height: 200px;
+    align-self: center;
+    margin-top: -250px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-plane {
+    font-size: 100px;
+    color:aliceblue;
+    align-self: center;
+}
+
+.logo h1 {
+    color: white;
+    align-self: center;
+    font-size: 70px;
+    font-family: Courgette-Regular;
+}
+
+.credits {
+    align-self: center;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(220, 131, 125);
+}
+
+.right-side {
+    height: 100%;
+    width: 60%;
+    background-color: rgb(208, 129, 151, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.text {
+    width: 80%;
+    color: rgb(69, 54, 89);
+    margin-bottom: 25px;
+    margin-top: -50px;
+}
+
+.text p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.form-div {
+    margin-top: 15px;
+    background-color: rgba(208, 129, 151, 0.2);
+    margin-left: -50px;
+    padding-left: 50px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-div h3 {
+    color: rgb(69, 54, 89);
+    margin: 15px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.first {
+    margin-right: 55px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: rgb(36, 28, 48);
+    font-weight: 300;
+    text-align: center;
+}
+
+input {
+    outline: none;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 8px 12px;
+    background-color: rgba(208, 129, 151, 0.4);
+    color: rgba(92, 51, 63, 1);
+}
+
+input:focus {
+    outline: 2px solid rgb(92, 51, 63);
+}
+
+input:invalid {
+    background-color: rgba(213, 101, 93, 1);
+}
+
+
+@media screen and (max-width: 1200px) { 
+    .logo {
+        width: 350px;
+        height: 150px;
+        margin-top: -150px;
+    }
+    .fa-plane {
+        font-size: 70px;
+    }
+    
+    .logo h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) { 
+    .logo {
+        width: 250px;
+        height: 100px;
+        
+    }
+    .fa-plane {
+        font-size: 60px;
+    }
+    
+    .logo h1 {
+        font-size: 30px;
+    }
+}
